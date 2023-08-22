@@ -1,0 +1,50 @@
+{
+  "name": "@alphaticks/friend-wrap",
+  "description": "Wrap friend.tech shares under ERC1155",
+  "license": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0",
+  "homepage": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphaticks/friend-wrap.git"
+  },
+  "files": [
+    "contracts/interfaces",
+    "contracts/libraries",
+    "artifacts/contracts/interfaces/**/*.json",
+    "!artifacts/contracts/interfaces/**/*.dbg.json"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@typechain/ethers-v5": "^10.0.0",
+    "@typechain/hardhat": "^6.0.0",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "decimal.js": "^10.2.1",
+    "ethereum-waffle": "^3.0.2",
+    "mocha": "^6.2.2",
+    "mocha-chai-jest-snapshot": "^1.1.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.59",
+    "solhint": "^3.2.1",
+    "solhint-plugin-prettier": "^0.0.5",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^8.5.4",
+    "typechain": "^8.0.0"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  }
+}
